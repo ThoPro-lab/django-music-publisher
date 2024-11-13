@@ -13,7 +13,7 @@ SOFTWARE_VERSION = "24.7 HOLIDAY (OPEN SOURCE)"
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("SECRET_KEY", None)
+SECRET_KEY = os.getenv("SECRET_KEY", "k8!p(ctl*i4iz$u^9(e*n-l#&m@!ql$&jv9wa4j_+d3&ledzq=")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", False)
