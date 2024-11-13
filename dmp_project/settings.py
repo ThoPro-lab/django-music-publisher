@@ -125,23 +125,23 @@ SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 SECURE_SSL_REDIRECT = not DEBUG
 
 # The name of the publisher. Use no comma in the name!
-PUBLISHER_NAME = os.getenv("PUBLISHER", "DMP - FREE MUSIC CATALOGUE SOFTWARE")
+PUBLISHER_NAME = os.getenv("PUBLISHER", "Sonoton Music Gmbh Co Kg")
 
 # CWR Delivery code, issued by collecting societies
-PUBLISHER_CODE = os.getenv("PUBLISHER_CODE", "000")
+PUBLISHER_CODE = os.getenv("PUBLISHER_CODE", "SOM")
 
 # IPI Name # is required, issued by collecting societies
-PUBLISHER_IPI_NAME = os.getenv("PUBLISHER_IPI_NAME", "")
+PUBLISHER_IPI_NAME = os.getenv("PUBLISHER_IPI_NAME", "276314560")
 # IPI Base # is rarely used, issued by collecting societies
-PUBLISHER_IPI_BASE = os.getenv("PUBLISHER_IPI_BASE", None)
+PUBLISHER_IPI_BASE = os.getenv("PUBLISHER_IPI_BASE", "276314560")
 
 # Affiliation societies for performance, mechanical and sync rights
 # Numerical value as string without the leading zero:
 # '52' for PRS, '44' for MCPS, '10' for ASCAP, '34' for HFA. etc.
 # see  music_publisher/societies.csv
-PUBLISHER_SOCIETY_PR = os.getenv("PUBLISHER_SOCIETY_PR", None)
-PUBLISHER_SOCIETY_MR = os.getenv("PUBLISHER_SOCIETY_MR", None)
-PUBLISHER_SOCIETY_SR = os.getenv("PUBLISHER_SOCIETY_SR", None)
+PUBLISHER_SOCIETY_PR = os.getenv("PUBLISHER_SOCIETY_PR", "035")
+PUBLISHER_SOCIETY_MR = os.getenv("PUBLISHER_SOCIETY_MR", "035")
+PUBLISHER_SOCIETY_SR = os.getenv("PUBLISHER_SOCIETY_SR", "035")
 
 # Shares transferred to the original publisher, default to 50%/100%/100%
 PUBLISHING_AGREEMENT_PUBLISHER_PR = Decimal(
